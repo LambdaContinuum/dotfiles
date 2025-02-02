@@ -1,0 +1,141 @@
+* {
+	margin: 0px 0px 0px 0px;
+  font-family: "Iosevka";
+  font-size: 14px;
+}
+
+window#waybar {
+		margin-top: 30px;
+		border-radius: 5px;
+    background-color: #11111b;
+    color: #9399b2;   
+}
+
+
+.modules-left {
+  margin-left: 10px;
+  border-radius: 5px;
+ 	background-color: #11111b;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.modules-right {
+  border-radius: 5px;
+	background-color: #11111b;
+	padding: 0px 5px 0px 0px;
+}
+
+
+
+#workspaces {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+  border-radius: 5px;
+	background-color: #1e1e2e;
+	color: #9399b2;
+}
+
+#window {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+  border-radius: 5px;
+	padding: 0px 10px 0px 10px;
+	background-color: #1e1e2e;
+	color: #9399b2;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces button {
+  border-radius: 20px;
+	padding: 0px 10px 0px 10px; 
+ 	min-width: 1px;
+	color: #9399b2;
+}
+
+
+#workspaces button.active {
+  border-radius: 20px;
+  box-shadow: none;
+ 	padding: 0px 10px 0px 10px;
+        min-width: 1px;	
+	background-color: #1e1e2e;
+	color:  #cba6f7;
+}
+
+
+#mode { 
+      background-color: #1e1e2e;
+      color: #9399b2; 
+      padding: 0px 5px 0px 5px;
+      border: 1px solid #2f343a;
+}
+
+#network, #temperature, #backlight, #pulseaudio, #battery, #clock, #clock.2 {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background-color: #1e1e2e;
+	padding: 0px 15px 0px 15px;
+}
+
+
+#tray{
+	padding: 0px 8px 0px 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+#network {
+	color: #cba6f7;
+}
+
+#backlight {
+	color: #cba6f7;
+}
+
+#pulseaudio {
+	color: #cba6f7;
+}
+
+#battery {
+	color: #a6e3a1;
+}
+
+#clock {
+	color: #cba6f7;
+}
+
+#clock.2 {
+	color: #cba6f7;
+}
+
+#battery.critical {
+	color: #f38ba8;
+}
+
+
+#network.disconnected {
+	color: #f38ba8;
+}
+
+#custom-wmname {
+  color: #89b4fa;
+	font-size: 25px;	
+}
+
+button:hover {
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+  background: none; /* Remove predefined background color (white) */
+  transition: none; /* Disable predefined animations */
+  border-color: transparent;
+  color: #8839ef;
+}
+
+
