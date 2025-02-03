@@ -37,6 +37,11 @@
         path = ./python;
         description = "Flake for Python  environment template";
       };
+
+      elm = {
+	path = ./elm;
+	description = "Flake for Elm environment template";
+      };
     };
 
     defaultTemplate = self.templates.example;
