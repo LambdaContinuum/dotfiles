@@ -6,7 +6,7 @@
   home.packages = with pkgs; [
     htop
     swww
-    legcord
+    equibop
     firefox
     grim
     slurp

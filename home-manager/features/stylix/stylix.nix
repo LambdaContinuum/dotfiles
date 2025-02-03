@@ -7,7 +7,7 @@
 
   stylix.cursor.package = pkgs.catppuccin-cursors.mochaDark;
   stylix.cursor.name = "catppuccin-mocha-dark-cursors";
-  stylix.cursor.size = 18;
+  stylix.cursor.size = 20;
 
   stylix.targets.waybar.enable = false;
 
