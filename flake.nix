@@ -44,14 +44,6 @@
         inputs.stylix.homeManagerModules.stylix
     ];
       };
-      # "azad-2@nixos" = home-manager.lib.homeManagerConfiguration {
-      #  pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      #  extraSpecialArgs = {inherit inputs;};
-      #  modules = [
-      #  ./home-manager/env-2.nix
-      #  inputs.stylix.homeManagerModules.stylix
-    # ];
-    #  };
     };
 
   };
