@@ -36,15 +36,23 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "azad@nixos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+      "azad-1@nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};
-        # > Our main home-manager configuration file <
         modules = [
-		./home-manager/home.nix
-		inputs.stylix.homeManagerModules.stylix
-	];
+        ./home-manager/env-1.nix
+        inputs.stylix.homeManagerModules.stylix
+    ];
+      };
+      "azad-2@nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+        ./home-manager/env-2.nix
+        inputs.stylix.homeManagerModules.stylix
+    ];
       };
     };
+
   };
 }
