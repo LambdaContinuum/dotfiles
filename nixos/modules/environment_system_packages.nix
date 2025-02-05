@@ -7,6 +7,8 @@
     gnupg
     curl
     bash
+    killall
     coreutils-full
+    inotify-tools
   ];
 }
