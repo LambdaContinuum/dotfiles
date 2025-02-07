@@ -1,31 +1,37 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "Iosevka";
+    font-family: "Mno16";
     font-size: 14px;
     min-height: 0;
-    color: #ebdbb2;
+    color: #1d2021;
 }
 
 window#waybar {
     border-bottom-style: inset;
-    border-bottom: 4px solid #689d6a;
-    background: #1d2021;
+    border-bottom: 4px solid #ebdbb2;
+    background: #ebdbb2;
 }
 
-#workspaces, #clock, #custom-music, #window { 
+window#waybar.empty #window{
+	background: none;
+}
+
+#workspaces, #clock, #custom-music { 
     /* font-weight: 800; */
+    background: #1d2021
 }
 
 /* Workspace Buttons */
 #workspaces button label{
-    color: #689d6a;
+    color: #ebdbb2;
+
 }
 #workspaces button.focused label {
     color: #1d2021;
 }
 #workspaces button.focused {
-    background: #689d6a; 
+    background: #ebdbb2; 
 }
 
 #workspaces button.active label {
@@ -33,9 +39,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-	background: #689d6a;
+	background: #ebdbb2;
 }
 
+#window {
+
+	padding-left: 5px;
+}
 
 #mode {
     background-color: #cc241d;
@@ -43,33 +53,20 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode, #idle_inhibitor {
-    padding: 0 5px;
-    margin: 0 10px;
+    background: #1d2021;
+    border-right: 30px solid #1d2021;
 }
 
-
-#idle_inhibitor {
-    padding: 0 10px;
+#clock, #battry, #cpu, #memory, #network, #pulseaudio, #tray, #mode, #idle_inhibitor label {
+	color: #ebdbb2;
 }
 
-#idle_inhibitor.activated {
-    background-color: #689d6a;
-    color: #1d2021;
-}
-
-
-#custom-music {
-    color: #b8bb26;
-    margin: 0 15px;
-    padding: 0 20px;
-    border-bottom: 4px solid #b8bb26;
-
+#network {
+	border-left: 10px solid #1d2021;
 }
 
 #clock {
-    margin: 0;
-    color: #fabd2f;
-    border-bottom: 4px solid #fabd2f;
+	border-right: 10px solid #1d2021;
 }
 
 
@@ -80,7 +77,6 @@ window#waybar {
 
 
 #pulseaudio.muted {
-    padding: 0 20px;
     color: #cc241d;
     border-bottom: 4px solid #cc241d;
 }

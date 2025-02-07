@@ -10,16 +10,16 @@
   stylix.cursor.size = 18;
   stylix.fonts = {
     monospace = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.scientifica;
+      name = "scientifica";
     };
     sansSerif = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.scientifica;
+      name = "scientifica";
     };
     serif = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.scientifica;
+      name = "scientifica";
     };
   };
 }
