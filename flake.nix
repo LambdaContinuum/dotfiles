@@ -36,11 +36,11 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "azad-1@nixos" = home-manager.lib.homeManagerConfiguration {
+      "azad@nixos" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};
         modules = [
-        ./home-manager/env-1.nix
+        ./home-manager/home.nix
         inputs.stylix.homeManagerModules.stylix
     ];
       };
