@@ -15,6 +15,7 @@
     ./modules/mpd.nix
     ./modules/ncmpcpp.nix
     ./modules/git.nix
+    ./modules/firefox.nix
   ];
 
   home.username = "azad";

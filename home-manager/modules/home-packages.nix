@@ -7,7 +7,6 @@
     htop
     swww
     equibop
-    firefox
     grim
     slurp
     wl-clipboard
