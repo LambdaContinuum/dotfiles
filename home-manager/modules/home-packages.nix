@@ -11,7 +11,8 @@
     slurp
     wl-clipboard
     swappy
-    librewolf 
+    librewolf
+    gimp 
   ];
 
 }

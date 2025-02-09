@@ -12,6 +12,8 @@
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     firefox-addons.inputs.nixpkgs.follows = "nixpkgs";
 
+    nvf.url = "github:notashelf/nvf";
+
   };
 
   outputs = {
@@ -39,6 +41,7 @@
         modules = [
         ./home-manager/home.nix
         inputs.stylix.homeManagerModules.stylix
+	inputs.nvf.homeManagerModules.default
     ];
       };
     };
