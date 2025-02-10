@@ -19,6 +19,7 @@
                         };
                         vim.autocomplete.nvim-cmp.enable = true;
                         vim.statusline.lualine.enable = true;
+                        vim.telescope.enable = true;
                 };
         };
 }

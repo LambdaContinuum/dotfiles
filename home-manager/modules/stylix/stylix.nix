@@ -13,16 +13,16 @@
 
   stylix.fonts = {
     monospace = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.terminus_font_ttf;
+      name = "Terminus (TTF)";
     };
     sansSerif = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.terminus_font_ttf;
+      name = "Terminus (TTF)";
     };
     serif = {
-      package = pkgs.iosevka;
-      name = "Iosevka";
+      package = pkgs.terminus_font_ttf;
+      name = "Terminus (TTF)";
     };
   };
 }

@@ -10,5 +10,6 @@
     killall
     coreutils-full
     inotify-tools
+    libvirt-glib
   ];
 }

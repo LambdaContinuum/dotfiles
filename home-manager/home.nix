@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
   imports = [
     ./modules/kitty.nix
@@ -17,6 +15,7 @@
     ./modules/git.nix
     ./modules/firefox.nix
     ./modules/nvf.nix
+    ./modules/dconf.nix
   ];
 
   home.username = "azad";
