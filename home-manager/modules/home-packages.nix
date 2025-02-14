@@ -12,7 +12,8 @@
     wl-clipboard
     swappy
     librewolf
-    gimp 
+    gimp
+    keepassxc
   ];
 
 }
