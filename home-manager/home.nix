@@ -16,6 +16,7 @@
     ./modules/firefox.nix
     ./modules/nvf.nix
     ./modules/dconf.nix
+    ./modules/newsboat.nix
   ];
 
   home.username = "azad";

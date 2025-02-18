@@ -26,6 +26,7 @@
     ./modules/stylix/stylix.nix
     ./modules/i2p.nix
     ./modules/virtualization.nix
+    ./modules/gnupg.nix
     ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
