@@ -25,24 +25,40 @@
     system = "x_86_64-linux";
   in {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      nixos-laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system; };
         modules = [
-		./nixos/configuration.nix
+		./nixos/nixos-laptop/configuration.nix
 		inputs.stylix.nixosModules.stylix
 	];
+      };
+      nixos-desktop = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs system; };
+        modules = [
+                ./nixos/nixos-desktop/configuration.nix
+                inputs.stylix.nixosModules.stylix
+        ];
       };
     };
 
     homeConfigurations = {
-      "azad@nixos" = home-manager.lib.homeManagerConfiguration {
+      "azad@nixos-laptop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};
         modules = [
-        ./home-manager/home.nix
+        ./home-manager/home-manager-laptop/home.nix
         inputs.stylix.homeManagerModules.stylix
 	inputs.nvf.homeManagerModules.default
-    ];
+        ];
+      };
+      "azad@nixos-desktop" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+        ./home-manager/home-manager-desktop/home.nix
+        inputs.stylix.homeManagerModules.stylix
+        inputs.nvf.homeManagerModules.default
+        ];
       };
     };
 
