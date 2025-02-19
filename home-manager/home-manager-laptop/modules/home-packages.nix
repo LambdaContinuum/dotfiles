@@ -14,7 +14,8 @@
     librewolf
     gimp
     keepassxc
-    hello
+    brightnessctl
+    pavucontrol
   ];
 
 }

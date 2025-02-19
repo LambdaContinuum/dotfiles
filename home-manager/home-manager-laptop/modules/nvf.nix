@@ -16,6 +16,7 @@
                                 ts.enable = true;
                                 rust.enable = true;
                                 css.enable = true;
+                                clang.enable = true;
                         };
                         vim.autocomplete.nvim-cmp.enable = true;
                         vim.statusline.lualine.enable = true;

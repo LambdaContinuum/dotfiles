@@ -4,9 +4,9 @@
         "layer": "top",
         "position": "top",
         "height": 30,
-        "modules-left": ["hyprland/workspaces"],
-        "modules-center": ["hyprland/window" ],
-        "modules-right": ["network", "pulseaudio",  "cpu", "memory", "clock"],
+        "modules-left": ["hyprland/workspaces", "hyprland/window"],
+        "modules-center": [],
+        "modules-right": ["cpu", "custom/separator", "memory", "custom/separator", "network", "custom/separator", "backlight", "custom/separator", "battery", "custom/separator", "pulseaudio", "custom/separator", "clock"],
 
         "hyprland/workspaces": {
             "format": "{icon}",
@@ -20,20 +20,33 @@
       
 
 	"hyprland/window": {
-        	"format": "{}"
+        	"format": "{}",
+                "max-length": 150
 	}, 
     
-	"tray": {
-        	"icon-size": 14,
-        	"spacing": 10
-    	},
     
 	"clock": {
-        	"format": "{:%I:%M %p - %m/%d/%y}"
+        	"format": "{:%a %b %e %r}",
+                "tooltip": false
   	},
+
+        "battery": {
+        "bat": "BAT1",
+        "states": {
+              "full": 100,
+              "good": 98,
+              "normal": 98,
+              "warning": 20,
+              "critical": 20
+        },
+
+        "format": "bat: {capacity}%",
+        "format-charging": "bat: {capacity}% +",
+        "interval": 30
+        },
     
 	"cpu": {
-        	"format": "cpu {usage}%"
+        	"format": "cpu: {usage}% @ avg {avg_frequency} Ghz"
     	},
 
     	"memory": {
@@ -43,16 +56,33 @@
 
     	"network": {
         	"interface": "wlp2s0",
-        	"format-wifi": "wifi: {bandwidthDownBits}",
-        	"format-ethernet": "enth: {bandwidthDownBits}",
+        	"format-wifi": "wifi: ↑{bandwidthUpBits} ↓{bandwidthDownBits}",
+        	"format-ethernet": "enth: ↑{bandwidthUpBits} ↓{bandwidthDownBits}",
         	"format-disconnected": "disconnected"
     	},
+
+        "backlight": {
+    	        "device": "intel_backlight",
+    	        "format": "bl: {percent}%",
+    	        "interval": 60,
+                "on-scroll-down": "brightnessctl set 5%-",
+                "on-scroll-up": "brightnessctl set 5%+"
+        },
+
+        "custom/separator": {
+                "format": "/",
+                "interval": "once",
+                "tooltip": false
+        },
+
 
     	"pulseaudio": {
         	"format": "vol: {volume}",
         	"format-bluetooth": "vol-blu: {volume}",
         	"format-muted": "muted",
-        	"interval": 60
+        	"interval": 60,
+                "scroll-step": 5,
+                "on-click": "pavucontrol"
 	}
 }
 
