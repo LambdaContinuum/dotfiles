@@ -2,8 +2,8 @@
 
 {
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/horizon-dark.yaml";
-  stylix.image = ./sicp-ascii.png;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  stylix.image = ./wp.jpg;
 
   stylix.cursor.package = pkgs.rose-pine-cursor;
   stylix.cursor.name = "BreezeX-RosePine-Linux";
