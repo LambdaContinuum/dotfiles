@@ -6,7 +6,7 @@
   home.packages = with pkgs; [
     htop
     swww
-    equibop
+    legcord
     grim
     slurp
     wl-clipboard
@@ -14,6 +14,8 @@
     librewolf
     gimp
     keepassxc
+    lutris
+    blueberry
   ];
 
 }

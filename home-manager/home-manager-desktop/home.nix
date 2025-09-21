@@ -17,6 +17,7 @@
     ./modules/nvf.nix
     ./modules/dconf.nix
     ./modules/newsboat.nix
+    ./modules/unfree.nix
   ];
 
   home.username = "azad";

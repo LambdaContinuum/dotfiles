@@ -3,7 +3,7 @@
 {
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-  stylix.image = ./wp.jpg;
+  stylix.image = ./gruvbox_tux.png;
 
   stylix.cursor.package = pkgs.rose-pine-cursor;
   stylix.cursor.name = "BreezeX-RosePine-Linux";
